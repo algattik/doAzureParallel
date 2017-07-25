@@ -72,6 +72,7 @@ getJobList <- function(jobIds = c()){
     if(length(tasks$value) > 0){
       taskStates <- lapply(tasks$value, function(x) x$state == "completed")
 
+    if(length(tasksStates))
       for(i in 1:length(taskStates)){
         if(taskStates[[i]] == TRUE){
           count <- count + 1
